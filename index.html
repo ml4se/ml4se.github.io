@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>ML for SE 2019</title>
+    <style>
+      body {
+        background-color : #D6EAF8;
+        font-family: 'Roboto';
+        font-weight: 300;
+      }
+
+      @media screen and (max-width: 850px) {
+        #sidebar {
+          clear: both;
+        }
+        #navbox {
+          color: #EEE;
+        }
+        #logo {
+          max-width: 100%;
+          max-height: 20ex;
+        }
+      }
+      @media screen and (min-width: 850px) {
+        body {
+          display: flex;
+          position: relative;
+        }
+        #sidebar {
+          display: block;
+          float: left;
+          width: 20em;
+        }
+        #navbox {
+          color: #EEE;
+          width: 210px;
+          position: fixed;
+        }
+        #logo {
+          width: 180px;
+        }
+      }
+
+      #navlinks {
+        padding: 1em 1em;
+        margin-top: 3ex;
+        font-size: 120%;
+        list-style-type: none;
+      }
+      #navlinks li {
+        margin: 0ex 0ex 1ex 0ex;
+      }
+
+      #main-cont {
+        display: block;
+        float: left;
+      }
+      
+      section.content-block {
+        margin-top : 4ex;
+        margin-bottom : 4ex;
+        background-color:white;
+        padding : 2ex;
+        box-shadow: 0.5ex 0.5ex 2ex #d0d0d0;
+        position: relative;
+        display: block;
+        max-width: 100ex;
+        line-height: 1.5;
+      }
+      .table_striped {
+        display: table;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-spacing: 1px;
+        border-color: grey;
+      }
+      h1 {
+        font-size: 300%;
+        text-align: center;
+        color: #5a5f75;
+      }
+      h2 {
+        font-size: 200%;
+        margin-top: 0ex;
+        margin-bottom: 1ex;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: #f0f0f0;
+        color: #960018;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav id="sidebar">
+      <div id="navbox">
+        <img src="logo.png" id="logo"/>
+        <ul id="navlinks">
+          <li><a role="presentation" href="#overview">Overview</a></li>
+          <li><a role="presentation" href="#call_for_papers">Call for papers</a></li>
+          <!--li><a role="presentation" href="#call_for_participation">Call for participation</a></li>
+          <li><a role="presentation" href="#Schedule">Program Schedule</a></li-->
+          <li><a role="presentation" href="#important_dates">Important dates</a></li>
+          <li><a role="presentation" href="#committees">Program committee</a></li>      
+          <li><a role="presentation" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="main-cont">
+      <header>
+        <div class="page-header">
+          <h1>Workshop on Machine Learning for Software Engineering</h1>
+          <span style="font-size: 150%"><em>Montreal, June 1st (right after <a href="https://2019.icse-conferences.org/">ICSE 2019</a>)</em></span>
+        </div>
+      </header>
+
+      <section class="content-block" id="overview">
+        <h2>Overview</h2>
+        <p>
+          The proliferation of open-source projects has led to large amounts of source code
+          and related artifacts: arguably, the rich and open resources associated with 
+          software--including open source repositories, Q/A sites, change histories, and
+          communications between developers--are the richest and most detailed information
+          resource for any technical area.
+          Recently it has been discovered that “natural”, human-produced software has many 
+          interesting statistical regularities. As a consequence code corpora, just like 
+          natural language corpora, are amenable to statistical modeling, and a number of 
+          software tasks such as coding, testing, porting, bug-patching etc are potentially
+          enhanced by the use of these statistical models. 
+        </p>
+            
+        <p>
+          This interdisciplinary workshop will explore issues related to the statistical
+          modeling of software corpora, including topics such as:  modeling repetitiveness 
+          in source code; use of language models for the code suggestion in IDEs;  using 
+          probabilistic grammars to mine programming idioms; statistical methods for type 
+          inference in a dynamically typed languages; statistical machine translation for 
+          porting applications between programming languages, or “mini-fying” Javascript;  
+          using statistical language models to find bugs; or statistical methods for 
+          automatic code patching, code summarization, code retrieval, code annotation, or
+          test generation.
+        </p>
+
+        <p>
+          We are delighted that the workshop will feature two invited speakers: 
+            <strong> <a href="http://web.cs.ucdavis.edu/~rubio/">Cindy Rubio Gonz&#xE1;lez</a></strong>
+              of the University of California at Davis,
+          and
+            <strong> <a href="http://cis.upenn.edu/~mhnaik/">Mayur Naik</a></strong>
+              of the University of Pennsylvania.
+        </p>        
+      </section>
+      
+      <section class="content-block" id="call_for_papers"> 
+        <h2>Call for papers</h2>
+          <!--<p>Download and print our <a href="https://nl4se2018.github.io/NL4SE18-Flyer.pdf">call for papers!</a></p>-->
+          <p>
+            This interdisciplinary workshop will explore issues related to the statistical 
+            modeling of software corpora, including topics such as:
+          </p>
+          <ul>
+            <li>Modeling repetitiveness ("naturalness") in source code</li>
+            <li>Applications to code suggestion in IDEs</li>
+            <li>Mining programming idioms</li>
+            <li>Statistical inference of types and other annotations</li>
+            <li>Applications of Statistical Machine Translation for porting and reverse engineering</li>
+            <li>Statistical methods for bug localization</li>
+            <li>Statistical methods for automatic code patching, code summarization, code retrieval, code annotation, or test generation</li>
+            <li>Formal and informal methods for enhancing assurance via NLP techniques</li>
+          </ul>
+          <p>
+            We invite short position papers or early-stage research papers of at most 4 pages
+            in length.  Several submissions will be invited for presentation.
+          </p>
+          <p>
+            If you are looking for software corpora to study, please be aware that the
+            <a href="https://conala-corpus.github.io/" target="_blank">Conala Corpus</a>
+            (curated by CMU) and
+            <a href="https://github.com/TellinaTool/nl2bash" target="_blank">NL2Bash Corpus</a>
+            (curated by the University of Washington) are available to use.
+          </p>
+          <p>You are encouraged to use the dataset to demonstrate your technology.</p>
+
+        <h3>Submission information</h3>
+          <p>
+            We invite contributions of up to <b>four</b> pages in length describing early-stage
+            research or position papers.  All submissions must be previously unpublished and not
+            submitted elsewhere.
+          </p>
+          <p>
+            <a href="https://easychair.org/conferences/?conf=ml4se19" target="_blank">Submission website via EasyChair</a>
+          </p>
+      </section>
+
+      <section class="content-block" id="important_dates">
+        <h2>Important Dates</h2>
+        <dt>March 21st, 2019</dt> <dd>Paper submission deadline (AoE)</dd>
+        <dt>April 13th, 2019</dt> <dd>Author notification</dd> 
+        <dt>June 1st, 2019</dt> <dd>Workshop</dd>
+      </section>
+        
+      <section class="content-block" id="committees">
+        <h2>Committees</h2>
+        <table class="table_striped" width="100%">
+          <tr><th colspan="2">Organizing Committee</td></tr>
+          <tr><td>Marc Brockschmidt</td><td>Microsoft Research</td></tr>
+          <tr><td>Satish Chandra</td><td>Facebook</td></tr>
+          <tr><td>Prem Devanbu</td><td>University of California, Davis</td></tr>
+          <tr><td>Baishakhi Ray</td><td>Columbia University</td></tr>
+          <tr><td>Daniel Tarlow</td><td>Google Brain</td></tr>
+        </table>
+        <br />
+        <table class="table_striped" width="100%">
+          <tr><th colspan="2">Program Committee</td></tr>
+          <tr><td>tbd</td></tr>
+        </table>
+      </section>
+      
+      <section id="contact" class="content-block">
+        <h2>Contact</h2>
+        For questions or comments about the workshop, please contact 
+        <a href="mailto:mabrocks@microsoft.com">Marc Brockschmidt</a>,
+        <a href="mailto:schandra@schandra.org">Satish Chandra</a>,
+        <a href="mailto:ptdevanbu@ucdavis.edu">Premkumar Devanbu</a>,
+        <a href="mailto:rayb@cs.columbia.edu">Baishakhi Ray</a>, or
+        <a href="mailto:dannytarlow@gmail.com">Danny Tarlow</a>.
+      </section>
+    </div>
+  </body>
+</html>
