@@ -103,9 +103,9 @@
         <img src="logo.png" id="logo"/>
         <ul id="navlinks">
           <li><a role="presentation" href="#overview">Overview</a></li>
-          <li><a role="presentation" href="#call_for_papers">Call for papers</a></li>
-          <!--li><a role="presentation" href="#call_for_participation">Call for participation</a></li>
-          <li><a role="presentation" href="#Schedule">Program Schedule</a></li-->
+          <!-- <li><a role="presentation" href="#call_for_papers">Call for papers</a></li>
+          <li><a role="presentation" href="#call_for_participation">Call for participation</a></li> -->
+          <li><a role="presentation" href="#schedule">Program Schedule</a></li-->
           <li><a role="presentation" href="#important_dates">Important dates</a></li>
           <li><a role="presentation" href="#committees">Program committee</a></li>      
           <li><a role="presentation" href="#contact">Contact</a></li>
@@ -157,6 +157,7 @@
         </p>        
       </section>
       
+      <!--
       <section class="content-block" id="call_for_papers"> 
         <h2>Call for papers</h2>
           <p>
@@ -184,31 +185,68 @@
           <p>
             We invite contributions of up to <b>four</b> pages in length describing early-stage
             research or position papers.
-	    Submissions that are posted on arxiv or under review elsewhere are welcome.
-	    Short versions of recently published submissions are also welcome, but priority will be given to work that hasn't previously been presented at a similar workshop.
+            Submissions that are posted on arxiv or under review elsewhere are welcome.
+            Short versions of recently published submissions are also welcome, but priority will be given to work that hasn't previously been presented at a similar workshop.
           </p>
           <p>
             Please submit through <a href="https://easychair.org/conferences/?conf=ml4se">EasyChair</a>,
             if possible using <a href="Master-Template-ML4SE2019.tar.gz">our paper style template</a>.
           </p>
       </section>
+      -->
 
-      <section class="content-block" id="call_for_papers"> 
+      <section class="content-block" id="schedule"> 
+        <h2>Program Schedule</h2>
+        <table class="table_striped" width="100%">
+          <tr><th>Start Time</th> <th>Title</th></tr>
+          <tr><td>8:30</td>       <td>Doors open</td></tr>
+          <tr><td>9:00</td>       <td>Breakfast</td></tr>
+          
+          <tr><td>9:30</td>       <td>Keynote: Mayur Naik</td></tr>
+          <tr><td>10:15</td>      <td>Break</td></tr>
+          
+          <tr><td>10:30</td>      <td>Contributed Talk: On Learning the Validity of Invariants</td></tr>
+          <tr><td>10:50</td>      <td>Contributed Talk: Improving Grey-Box Fuzzing by Modeling Program Control Flow</td></tr>
+          <tr><td>11:10</td>      <td>Panel Discussion: Open Research Problems in ML4SE</td></tr>
+          <tr><td>12:00</td>      <td>Poster Spotlights (1 min pitch per poster)</td></tr>
+
+          <tr><td>12:15</td>      <td>Lunch (on site)</td></tr>
+
+          <tr><td>13:00</td>      <td>Poster Session</td></tr>
+
+          <tr><td>14:00</td>      <td>Keynote: Cindy Rubio Gonz&#xE1;lez</td></tr>
+          <tr><td>14:45</td>      <td>Break</td></tr>
+
+          <tr><td>15:00</td>      <td>Contributed Talk: How Often Do Single-Statement Bugs Occur? The ManySStuBs4J Dataset</td></tr>
+          <tr><td>15:20</td>      <td>Contributed Talk: The Adverse Effects of Code Duplication in Machine Learning Models of Code</td></tr>
+          <tr><td>15:40</td>      <td>Break</td></tr>
+
+          <tr><td>16:00</td>      <td>Open Discussion: Problems of Deploying ML in Software Engineering Teams</td></tr>
+
+          <tr><td>17:00</td>      <td>End</td></tr>
+        </table>
+      </section>
+
+      <section class="content-block" id="registration"> 
         <h2>Registration</h2>
         <p>
-	  Space is limited, so pre-registration is required.
-	  There is no registration fee.
-	  Slots will be reserved for the program committee and authors of accepted papers.
-	  We welcome participation from others, but we may need to cap registration if we exceed space constraints.
-	  If you would like to attend, please fill out
-	  the <a href="https://docs.google.com/forms/d/e/1FAIpQLSf277R-W9xUBsMSnH8oo5vvmB0g8071Wl2q-nZLQbcJ1BSjtw/viewform">registration request form</a>.
-	  However, please note that <b>registration is not confirmed until you receive an email from the organizers confirming space availability</b> (the form submission confirmation is not sufficient).
-          </p>
+          We have reached capacity and hence cannot accomodate more registrations.
+        <!--
+          Space is limited, so pre-registration is required.
+          There is no registration fee.
+          Slots will be reserved for the program committee and authors of accepted papers.
+
+          We welcome participation from others, but we may need to cap registration if we exceed space constraints.
+          If you would like to attend, please fill out
+          the <a href="https://docs.google.com/forms/d/e/1FAIpQLSf277R-W9xUBsMSnH8oo5vvmB0g8071Wl2q-nZLQbcJ1BSjtw/viewform">registration request form</a>.
+          However, please note that <b>registration is not confirmed until you receive an email from the organizers confirming space availability</b> (the form submission confirmation is not sufficient).
+        -->
+        </p>
       </section>
       
       <section class="content-block" id="important_dates">
         <h2>Important Dates</h2>
-	<dt><del>April 5, 2019</del> April 19, 2019</dt> <dd>Paper submission deadline (AoE)</dd>
+        <dt><del>April 5, 2019</del> April 19, 2019</dt> <dd>Paper submission deadline (AoE)</dd>
         <dt><del>April 19, 2019</del> April 22, 2019</dt> <dd>Author notification</dd> 
         <dt>June 1, 2019</dt> <dd>Workshop</dd>
       </section>
@@ -216,7 +254,7 @@
       <section class="content-block" id="committees">
         <h2>Organizers</h2>
         <table class="table_striped" width="100%">
-          <tr><th colspan="2">Organizing Committee</td></tr>
+          <tr><th colspan="2">Organizing Committee</th></tr>
           <tr><td>Marc Brockschmidt</td><td>Microsoft Research</td></tr>
           <tr><td>Satish Chandra</td><td>Facebook</td></tr>
           <tr><td>Prem Devanbu</td><td>University of California, Davis</td></tr>
